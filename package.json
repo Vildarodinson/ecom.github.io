@@ -1,12 +1,15 @@
 {
   "name": "ecommerce",
   "version": "0.1.0",
+  "homepage": "https://Vildarodinson.github.io/ecommerce",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
@@ -25,6 +28,7 @@
     "styled-components": "^5.3.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.8"
+    "@babel/core": "^7.21.8",
+    "gh-pages": "^5.0.0"
   }
 }
